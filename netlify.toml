@@ -1,1 +1,10 @@
+[build]
+  command = "npm run build" # or "yarn build"
+  publish = "frontend/build" # specify the build output directory
 
+[build.environment]
+  NODE_VERSION = "16" # or the version you are using
+
+# Optionally, if you're using serverless functions
+[[functions]]
+  directory = "backend/functions" # the directory where your Python functions are located
